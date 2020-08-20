@@ -25,6 +25,8 @@
         "linebreak-style": ["error", "unix"],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": ["error", { "ignore": ["children"] }],
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "import/prefer-default-export": "off",
         "import/extensions": [
