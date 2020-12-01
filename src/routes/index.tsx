@@ -7,13 +7,15 @@ import SignUp from '../pages/SignUp';
 const Auth = createStackNavigator();
 
 const AuthRoutes: React.FC = () => (
-  <Auth.Navigator screenOptions={{
-    headerShown: false,
-    // headerTintColor: '#FFF',
-    // headerTitleAlign: 'center',
-    // headerStyle: { backgroundColor: '#312e38' },
-    cardStyle: { backgroundColor: '#312e38' },
-  }}
+  <Auth.Navigator
+    screenOptions={{
+      headerShown: false,
+      // headerTintColor: '#FFF',
+      // headerTitleAlign: 'center',
+      // headerStyle: { backgroundColor: '#312e38' },
+      cardStyle: { backgroundColor: '#312e38' },
+    }}
+    initialRouteName="SignIn"
   >
     <Auth.Screen name="SignIn" component={SignIn} />
     <Auth.Screen name="SignUp" component={SignUp} />
